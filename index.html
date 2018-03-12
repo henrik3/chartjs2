@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChartJS</title>
+</head>
+<body>
+
+    <canvas width="720" height="480" id="chartcanvas"></canvas>
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+    <script type="text/javascript">
+    //get the canvas
+    var ctx = $("#chartcanvas");
+
+    //instantiate the Chart class
+    var chart = new Chart(ctx, {
+    	type : "line",
+    	data : {},
+    	options: {
+    		responsive : true
+    	}
+    });
+</script>
+</body>
+</html>
